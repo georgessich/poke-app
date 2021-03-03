@@ -3,8 +3,8 @@ import './style.css';
 export default function Card({ pokemon }) {
     return (
         <div className='Card'>
-            <div className='Card__img'>
-                <img src={pokemon.sprites.other.dream_world.front_default}/>
+            <div >
+                <img className='Card__img' src={pokemon.sprites.other.dream_world.front_default}/>
             </div>
             <div className='Card__name'>
                 {pokemon.name}

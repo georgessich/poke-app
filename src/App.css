@@ -63,17 +63,16 @@ input[type='text'] {
   outline: none;
 }
 
-.cards {
+.grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
-.card {
-  cursor: pointer;
+.Card {
   background-color: transparent;
-  height: 300px;
-  perspective: 1000px;
+  height: 400px;
+
 }
 
 .card h1 {
