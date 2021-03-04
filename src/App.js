@@ -55,13 +55,14 @@ function App() {
   console.log(pokemonData);
   return (
     <div className="container">
-      <div className='btn'>
-        <button onClick={prev}>Prev</button>
-        <button onClick={next}>Next</button>
-      </div>
+      
       <Header />
+      <div className='btn__container'>
+        <button className='btn' onClick={prev}>Prev</button>
+        <button className='btn' onClick={next}>Next</button>
+      </div>
       { loading ? 
-      <h1>Loadind...</h1> 
+      <h1>Loading...</h1> 
       :(
         <>
         <div className='container'>
@@ -70,9 +71,9 @@ function App() {
               return <Card key={i} pokemon = {pokemon} />
             })}
           </div>
-          <div className='btn'>
-        <button onClick={prev}>Prev</button>
-        <button onClick={next}>Next</button>
+          <div className='btn__container btn__bottom'>
+        <button className='btn' onClick={prev}>Prev</button>
+        <button className='btn' onClick={next}>Next</button>
       </div>
       </div>
         </>

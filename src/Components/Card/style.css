@@ -1,8 +1,42 @@
 .Card {
-
+    background-image: url('../../img/d3n22fk-ca665f8a-9aa5-4508-9132-a0cc7b06c3b8.png');
+    border-radius: 10px;
+    border: 5px solid #0000CD;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Card__img {
     width: 200px;
     height:200px;
+}
+
+.Card__name {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.Card__types {
+    margin-top: 20px;
+    display: flex;
+}
+.Card__type {
+    padding: 2px;
+    margin-right: 20px;
+    background-color: #38ac85;
+    color: #ffffff;
+    border-radius: 5px;
+
+}
+
+.Card__info {
+    margin-top: 30px;
+    display: flex;
+}
+.Card__data {
+    margin-right: 30px;
 }
